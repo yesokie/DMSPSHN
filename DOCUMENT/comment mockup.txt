@@ -1,0 +1,56 @@
+﻿Đây là yêu cầu ban đầu của viện
+Upload file dữ liệu (docs …)
+2.	Nhập liệu các thông tin liên quan đến tài liệu
+-	Tên người tạo: tự động
+-	Ngày tạo (chỉnh sửa): tự động
+-	Lựa chọn folder sẽ lưu file
+-	Thẻ tag để dễ tìm kiếm (một dạng phân loại)
+-	Phân quyền để cho file chỉ được xem, file được xem vs download
+-	Phân quyền cho các bộ phận được xem,cho người được xem
+3.	Convert từ docs sang pdf
+4.	Tạo mỗi khoa phòng 1 folder riêng
+5.	Lịch sử chỉnh sửa xóa
+6.	Tìm kiếm tài liệu
+
+đây là comment bổ xung của viện:
+1. Admin tổng là ng lập trình để chỉnh sửa update hệ thống mềm, hoặc sửa lopix nếu admin khoa, phòng nhờ hỗ trợ
+2. Admin khoa phòng là ng up, xoá, thay đổi nội dung
+3. Tk ng dùng chỉ đc quyền xem đọc và tải file nếu file đó để chế độ đc phép tải
+4. File đc phép xoá, admin up bài đc quheenf xoá
+5. Phiên bản có thể auto tự động nhảy nhưng có thể sửa đc (vì có TH up nhầm hoặc chỉnh sửa file nên file sau vẫn là phiên bản cũ)
+6. Phiên bản mới cập nhật, thì phiên bản cũ ko bị xoá nhưng ko lưu ở bảng tổng hợp, vậy sẽ lưu ở đâu để ng xem đọc đc? Chị lăn tăn cái này nên chưa đề cập ban đầu. Nếu bên làm Wen nghĩ đc thì ok
+7. Biểu mẫu: đg link biể mẫu ở bảng tô gr hợp, khi click vào đó sẽ hiện ra list riêng các Bm từng quy trình. Và đương nhiên toàn bộ Biểu mẫu sẽ ở 1 nơi riewng, cửa sổ riêng. Có tổng hợp toàn bộ các biểu mẫu của tấy cả quy trình quy định 
+8. Ng up quy trình là ng up BM vì đó là file kèm. Nếu riêng biệt thì ng up vẫn là admin của khoa, phòng đó. Do vậy họ có quyền tạo, xoá sửa
+
+Dưới đây là comment về mockup a Minh vẽ
+1. tạo văn bản
+	- không có chỗ chọn văn bản thuộc biểu mẫu nào như viện mô tả hoặc ở đây liệu có phân biệt giao diện up nội dung biểu mẫu khác với giao diện up 1 nội dung document thông thường khác không?
+	- Quyền tải hay không tải --> không giải quyết được triệt để vì ng ta đang dùng tình duyệt thì chỉ cần Ctrl+P là in được , 
+								- file là dạng pdf nên để hiển thị đc trên trình duyệt thì bắt buộc sẽ có link tải lộ ra và ng ta vẫn có cách để download về được
+	- Đã tải được thì nghiễm nhiên in được nên không thể có quyền này được
+	- không có ô đặt tên quy trình hay tên văn bản
+	- Số hiệu và mã hiệu khác gì nhau??
+	- nếu những người được chia sẻ chỉ có thể xem thì sẽ không thể có chức năng ủy quyền xóa /chỉnh sửa file tài liệu và chỉ có duy nhất 1 tài khoản người up bài được edit như vậy chức năng này có quá tù không?
+          - không có chỗ để edit version và ghi thông tin thay đổi của version và cũng ko hiểu đây là edit version hay là luôn luôn add version mới
+	- giao diện này là của admin tổng vậy nếu là admin của khoa/phòng up bài văn bản nội bộ thì có các tính năng vd như chia sẻ không?
+2. Tra cứu văn bản
+	- chỉ có 1 list danh sách các văn bản thôi hả anh?
+	- Các trường thông tin hiển thị ra list như vậy có ít quá không?
+	- không có các button chức năng như chỉnh sửa/xóa/xem/download/góp ý
+	- khonog có thông tin người tạo/modify hoặc chia sẻ bởi ai
+	- không có chỗ download/xem biểu mẫu
+	- không có tìm kiếm theo tag
+	- tài khoản được xem không thể tự sắp xếp đc văn bản theo folder/được chia sẻ từ admin hoặc phòng ban khác/hoặc tự mình tạo/theo tag/ mà chỉ có thể tìm = cách search thôi đúng không?
+	
+3. phần giao diện menu
+	- không có quản lý phân quyền tổng vd: ai là admin, ngoài quyền admin full quyền thì có thể phân các quyền nhỏ hơn quyền admin không
+	- không có quản lý group (khoa/phòng ban)
+	- không có quản lý tài khoản và quyền của tài khoản trong 1 group cũng như quyền của 1 tài khoản đối với hệ thống
+	- không hiển thị file theo dạng folder/file tức là không có quản lý folder
+	- không thấy có phần quản lý thẻ (tag) hệ thống như yêu cầu ban đầu
+	- không thấy menu để xem lịch sử chỉnh tương tác hệ thống
+	- tài khoản bất kỳ có nhìn được các menu như trong hình không nghĩa là đều có thể xem các loại văn bản pháp quy/biểu mẫu/nội bộ (thuộc phòng của mình và cả các phòng khác)
+4. Liên quan tới quyền up văn bản nội bộ	
+	- Nếu như hệ thống này đặt nặng tới tài nguyên là từ admin tạo ra (chứ thành viên ko được) vậy thì khi Admin phòng/khoa up lên là lên luon hay phải qua bộ phận duyệt vd : admin tổng
+	
+
