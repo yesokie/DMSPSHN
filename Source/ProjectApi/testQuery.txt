@@ -1,0 +1,58 @@
+query GetAnimal{
+  getAnimal(_id:"5d4e2e399fbef432dc9cb504"){
+    data{
+      _id
+      name
+      birthDay
+    }
+  }
+}
+query GetListAnimal{
+  listAnimal{
+    code
+    message
+    page
+    records
+    pages
+    data{
+      _id
+      name
+      birthDay
+    }
+  }
+}
+
+mutation AddAnimal{
+  addAnimal(animal:{
+    name:"Dog",
+    birthDay:"2019-1-1"
+  }){
+    code
+    message
+    data{
+      _id
+    }
+  }
+}
+mutation LoginTest{
+  login(username:"thong",password:"123"){
+    code
+    message
+    data{
+      _id
+    }
+  }
+}
+mutation UpdateAnimal{
+  updateAnimal(animal:{
+    name:"Cat",
+    birthDay:"2019-1-1",
+    _id: "5d4e2e399fbef432dc9cb504"
+  }){
+    code
+    message
+    data{
+      _id
+    }
+  }
+}

@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <LangVersion>7.1</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="appsettings.Development.json" />
+    <None Remove="appsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.Development.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\COMMON LIB\CommonLib\CommonLib.csproj" />
+    <ProjectReference Include="..\..\..\COMMON LIB\DBLoging\DBLoging.csproj" />
+    <ProjectReference Include="..\..\..\COMMON LIB\Elsaga.PushNotification\Elsaga.PushNotification.csproj" />
+    <ProjectReference Include="..\..\..\COMMON LIB\MongoUtil\MongoUtil.csproj" />
+    <ProjectReference Include="..\ProjectDB\ProjectDB.csproj" />
+  </ItemGroup>
+
+</Project>

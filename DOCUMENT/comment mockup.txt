@@ -37,7 +37,7 @@ Dưới đây là comment về mockup a Minh vẽ
 	- chỉ có 1 list danh sách các văn bản thôi hả anh?
 	- Các trường thông tin hiển thị ra list như vậy có ít quá không?
 	- không có các button chức năng như chỉnh sửa/xóa/xem/download/góp ý
-	- khonog có thông tin người tạo/modify hoặc chia sẻ bởi ai
+	- không có thông tin người tạo/modify hoặc chia sẻ bởi ai
 	- không có chỗ download/xem biểu mẫu
 	- không có tìm kiếm theo tag
 	- tài khoản được xem không thể tự sắp xếp đc văn bản theo folder/được chia sẻ từ admin hoặc phòng ban khác/hoặc tự mình tạo/theo tag/ mà chỉ có thể tìm = cách search thôi đúng không?
@@ -52,5 +52,5 @@ Dưới đây là comment về mockup a Minh vẽ
 	- tài khoản bất kỳ có nhìn được các menu như trong hình không nghĩa là đều có thể xem các loại văn bản pháp quy/biểu mẫu/nội bộ (thuộc phòng của mình và cả các phòng khác)
 4. Liên quan tới quyền up văn bản nội bộ	
 	- Nếu như hệ thống này đặt nặng tới tài nguyên là từ admin tạo ra (chứ thành viên ko được) vậy thì khi Admin phòng/khoa up lên là lên luon hay phải qua bộ phận duyệt vd : admin tổng
-	
+	- Có bao nhiêu loại quyền tài khoản trong hệ thống này?Chi tiết từng loại quyền được phép truy cập những tài nguyên gì, giao diện thế nào?
 

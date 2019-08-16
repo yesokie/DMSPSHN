@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <LangVersion>7.1</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="testQuery.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="testQuery.txt" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="GraphiQL" Version="1.2.0" />
+    <PackageReference Include="GraphQL" Version="2.4.0" />
+    <PackageReference Include="GraphQL.Client" Version="1.0.3" />
+    <PackageReference Include="GraphQL.Server.Transports.AspNetCore" Version="3.4.0" />
+    <PackageReference Include="GraphQL.Server.Transports.WebSockets" Version="3.4.0" />
+    <PackageReference Include="GraphQL.Server.Ui.Playground" Version="3.4.0" />
+    <PackageReference Include="IdentityServer4" Version="2.5.2" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="2.2.0" />
+    <PackageReference Include="MongoDB.Driver" Version="2.8.1" />
+    <PackageReference Include="Portable.BouncyCastle" Version="1.8.5" />
+    <PackageReference Include="ServiceStack.Redis.Core" Version="5.6.0" />
+    <PackageReference Include="StackExchange.Redis" Version="2.0.601" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\COMMON LIB\CommonLib\CommonLib.csproj" />
+    <ProjectReference Include="..\..\..\COMMON LIB\DBLoging\DBLoging.csproj" />
+    <ProjectReference Include="..\..\..\COMMON LIB\Elsaga.PushNotification\Elsaga.PushNotification.csproj" />
+    <ProjectReference Include="..\..\..\COMMON LIB\GraphQLAuthorization\GraphQLAuthorization.csproj" />
+    <ProjectReference Include="..\..\..\COMMON LIB\MongoUtil\MongoUtil.csproj" />
+    <ProjectReference Include="..\ProjectDB\ProjectDB.csproj" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
